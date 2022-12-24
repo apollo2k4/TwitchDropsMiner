@@ -86,7 +86,7 @@ class SkipExtraJsonDecoder(json.JSONDecoder):
         return obj
 
 
-CLIENT_ID, USER_AGENT = ClientType.SMARTBOX
+CLIENT_ID, USER_AGENT = ClientType.ANDROID
 SAFE_LOADS = lambda s: json.loads(s, cls=SkipExtraJsonDecoder)
 
 
